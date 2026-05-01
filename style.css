@@ -1,3 +1,4 @@
+/* ===== 기본 세팅 ===== */
 body {
   margin: 0;
   font-family: "Pretendard", "Noto Sans KR", sans-serif;
@@ -11,6 +12,7 @@ main {
   height: 100vh;
 }
 
+/* ===== 전체 레이아웃 ===== */
 .profile-page {
   width: 100%;
   height: 100vh;
@@ -22,6 +24,7 @@ main {
   gap: 88px;
 }
 
+/* ===== 왼쪽 영역 ===== */
 .profile-left {
   display: flex;
   flex-direction: column;
@@ -30,7 +33,7 @@ main {
 
 .eyebrow {
   margin: 0 0 24px;
-  color: #8c61c0;
+  color: #0ea5a4;
   font-size: 20px;
   font-weight: 700;
 }
@@ -45,7 +48,7 @@ h1 {
 
 .role {
   margin: 28px 0 0;
-  color: #8c61c0;
+  color: #0ea5a4;
   font-size: 28px;
   font-weight: 700;
 }
@@ -63,6 +66,7 @@ h1 {
   font-weight: 700;
 }
 
+/* ===== 키워드 ===== */
 .keywords {
   display: flex;
   gap: 14px;
@@ -72,12 +76,13 @@ h1 {
 .keywords span {
   padding: 12px 22px;
   border-radius: 999px;
-  background: #eae2f4;
-  color: #6f45a0;
+  background: #e6f7f6;
+  color: #0f766e;
   font-size: 16px;
   font-weight: 700;
 }
 
+/* ===== 오른쪽 카드 영역 ===== */
 .profile-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -95,17 +100,18 @@ h1 {
   border: 1px solid #e7ded4;
 }
 
+/* ===== 카드 공통 ===== */
 .number {
   display: inline-block;
   margin-bottom: 14px;
-  color: #8c61c0;
+  color: #0ea5a4;
   font-size: 14px;
   font-weight: 800;
 }
 
 .info-card h2 {
   margin: 0 0 20px;
-  color: #8c61c0;
+  color: #0ea5a4;
   font-size: 24px;
   font-weight: 800;
 }
@@ -136,19 +142,21 @@ h1 {
   line-height: 1.6;
 }
 
+/* ===== About 강조 ===== */
 .about-card {
   background: #ffffff;
-  border: 1px solid #dbc9ed;
+  border: 1px solid #bfe8e6;
 }
 
+/* ===== Project 강조 ===== */
 .project-card {
   background: #ffffff;
-  border: 1px solid #d8c5f3;
+  border: 1px solid #9adbd8;
 }
 
 .project-item {
   padding: 14px 0;
-  border-top: 1px solid rgba(140, 97, 192, 0.2);
+  border-top: 1px solid rgba(14, 165, 164, 0.2);
 }
 
 .project-item:first-of-type {
@@ -165,4 +173,32 @@ h1 {
 .project-item p {
   font-size: 15px;
   line-height: 1.6;
+}
+
+/* ===== Contact ===== */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #2d2a26;
+
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #d7eeed;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.contact-list a:hover {
+  background: #e6f7f6;
+  color: #0ea5a4;
+  border-color: #9adbd8;
 }
