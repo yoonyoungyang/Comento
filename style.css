@@ -1,4 +1,4 @@
-/* ===== 기본 세팅 ===== */
+/*  기본 세팅  */
 body {
   margin: 0;
   font-family: "Pretendard", "Noto Sans KR", sans-serif;
@@ -12,7 +12,7 @@ main {
   height: 100vh;
 }
 
-/* ===== 전체 레이아웃 ===== */
+/*  전체 레이아웃  */
 .profile-page {
   width: 100%;
   height: 100vh;
@@ -24,7 +24,7 @@ main {
   gap: 88px;
 }
 
-/* ===== 왼쪽 영역 ===== */
+/*  왼쪽 영역  */
 .profile-left {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ h1 {
   font-weight: 700;
 }
 
-/* ===== 키워드 ===== */
+/*  키워드  */
 .keywords {
   display: flex;
   gap: 14px;
@@ -82,7 +82,7 @@ h1 {
   font-weight: 700;
 }
 
-/* ===== 오른쪽 카드 영역 ===== */
+/*  오른쪽 카드 영역  */
 .profile-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -100,7 +100,7 @@ h1 {
   border: 1px solid #e7ded4;
 }
 
-/* ===== 카드 공통 ===== */
+/*  카드 공통  */
 .number {
   display: inline-block;
   margin-bottom: 14px;
@@ -142,13 +142,13 @@ h1 {
   line-height: 1.6;
 }
 
-/* ===== About 강조 ===== */
+/*  About 강조  */
 .about-card {
   background: #ffffff;
   border: 1px solid #bfe8e6;
 }
 
-/* ===== Project 강조 ===== */
+/*  Project 강조  */
 .project-card {
   background: #ffffff;
   border: 1px solid #9adbd8;
@@ -175,7 +175,7 @@ h1 {
   line-height: 1.6;
 }
 
-/* ===== Contact ===== */
+/*  Contact  */
 .contact-list {
   display: flex;
   flex-direction: column;
