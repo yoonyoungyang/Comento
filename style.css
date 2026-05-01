@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  background: #f9f7f4;
+  color: #2d2a26;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.profile-page {
+  width: 100%;
+  height: 100vh;
+  padding: 96px 120px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr;
+  gap: 88px;
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: #8c61c0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: -4px;
+  color: #191716;
+}
+
+.role {
+  margin: 28px 0 0;
+  color: #8c61c0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.intro {
+  margin: 36px 0 0;
+  max-width: 560px;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #3f3b37;
+}
+
+.intro strong {
+  color: #191716;
+  font-weight: 700;
+}
+
+.keywords {
+  display: flex;
+  gap: 14px;
+  margin-top: 44px;
+}
+
+.keywords span {
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #eae2f4;
+  color: #6f45a0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.profile-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-content: center;
+}
+
+.info-card {
+  min-height: 260px;
+  padding: 32px;
+  box-sizing: border-box;
+
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #e7ded4;
+}
+
+.number {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #8c61c0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.info-card h2 {
+  margin: 0 0 20px;
+  color: #8c61c0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.info-card h3 {
+  margin: 0 0 16px;
+  color: #191716;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.info-card p {
+  margin: 0;
+  color: #3f3b37;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.info-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.info-card li {
+  margin-bottom: 12px;
+  color: #3f3b37;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #dbc9ed;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #d8c5f3;
+}
+
+.project-item {
+  padding: 14px 0;
+  border-top: 1px solid rgba(140, 97, 192, 0.2);
+}
+
+.project-item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.project-item h3 {
+  margin: 0 0 6px;
+  font-size: 19px;
+  color: #191716;
+}
+
+.project-item p {
+  font-size: 15px;
+  line-height: 1.6;
+}
