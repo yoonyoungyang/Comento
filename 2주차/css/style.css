@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--font);
+  color: var(--text);
+  background: linear-gradient(180deg, #fff9fc 0%, #fff4f8 100%);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 전체 화면 가운데 정렬 */
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 자판기 전체 */
+.vending-machine {
+  width: 620px;
+  height: 92vh;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--machine);
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* 상단 제목 */
+.machine-header {
+  text-align: center;
+}
+
+.machine-header p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--muted);
+}
+
+.machine-header h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* 음료 영역 + 조작 영역 묶음 */
+.machine-main {
+  width: 520px;
+  flex: 1;
+  min-height: 0;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 340px 160px;
+  gap: 20px;
+}
+
+/* 음료 진열 영역 */
+.drink-area {
+  min-height: 0;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: var(--drink-panel);
+}
+
+/* 4열 6행 */
+.drink-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+}
+
+/* 음료 한 칸 */
+.drink-item {
+  min-width: 0;
+  min-height: 0;
+  padding: 6px;
+  border-radius: 14px;
+  background: #fffdfd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 음료 이미지 */
+.drink-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* 음료 코드 */
+.drink-item p {
+  margin-top: 4px;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+/* 오른쪽 조작 영역 */
+.control-area {
+  min-height: 0;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: var(--control-panel);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 가격 박스 */
+.price-box {
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  color: white;
+  background: var(--dark);
+}
+
+.price-box span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #f3e9ff;
+}
+
+.price-box strong {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* 입력 영역 */
+label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  margin-top: 6px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  background: var(--input-bg);
+  color: var(--text);
+}
+
+/* 카드 슬롯 */
+.card-slot {
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: #fffafc;
+}
+.card-slot div {
+  height: 7px;
+  margin-bottom: 8px;
+  border-radius: 999px;
+  background: var(--dark);
+}
+
+.card-slot p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--muted);
+}
+
+/* 배출구 */
+.pickup-area {
+  width: 520px;
+  height: 48px;
+  margin: 0 auto;
+  flex-shrink: 0;
+
+  border-radius: var(--radius-md);
+  background: var(--pickup-panel);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--muted);
+}
+
+/* 작은 화면 */
+@media (max-width: 700px) {
+  body {
+    overflow: auto;
+  }
+
+  .vending-machine {
+    width: 620px;
+    height: 92vh;
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    background: var(--machine);
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .machine-main {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .pickup-area {
+    width: 100%;
+  }
+
+  .drink-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+  }
+
+  .drink-item {
+    min-width: 0;
+    min-height: 0;
+    padding: 6px;
+    border-radius: 14px;
+    background: var(--item-bg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

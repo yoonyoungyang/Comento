@@ -1,0 +1,24 @@
+:root {
+  --bg: #fff8fb;
+  --machine: #fffdfd;
+
+  --drink-panel: #ffe5ef;
+  --control-panel: #fff3cf;
+  --pickup-panel: #fff1f7;
+
+  --item-bg: #fffafc;
+  --input-bg: #fffdfd;
+
+  --dark: #55424f;
+  --text: #433640;
+  --muted: #9a7f8d;
+  --line: #f3c7d8;
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  --shadow: 0 20px 50px rgba(225, 141, 176, 0.12);
+
+  --font: Arial, sans-serif;
+}
